@@ -25,11 +25,13 @@ public class User implements Serializable{
 	 */
 	private static final long serialVersionUID = -1369148652554782331L;
 	
+	//no nulo autoincremento
 	@Id
 	@GeneratedValue(strategy= GenerationType.AUTO, generator="native") //Se utiliza para realizar el autoincremento de MySQL
 	@GenericGenerator(name="native",strategy="native")
 	private Long id;
 	
+	//crea una columna cuando llama a hibernate
 	@Column
 	private String firstName;	
 	@Column
