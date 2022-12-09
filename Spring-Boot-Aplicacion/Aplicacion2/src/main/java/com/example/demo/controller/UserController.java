@@ -24,7 +24,7 @@ public class UserController {
 	RoleRepository roleRepository;
 	
 	@GetMapping("/")
-	//El string es para que redireccione a el archivo html en especifico
+	//El string es para que redireccione a el archivo html en especifico, busca el codigo con titulo intex.html y lo invoca
 	public String index() {
 		return "index";
 	}
